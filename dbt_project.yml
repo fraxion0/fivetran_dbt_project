@@ -1,0 +1,10 @@
+name: 'fivetran_project'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+models:
+  fivetran_project:
+    +schema: analytics
+    +materialized: view
