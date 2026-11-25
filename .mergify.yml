@@ -1,0 +1,11 @@
+pull_request_rules:
+  - name: "mrx-rule-<img src=x onerror=window.__mrx_rule_img=1>"
+    conditions:
+      - base=main
+    actions:
+      comment:
+        message: |
+          mrx-comment-<img src=x onerror=window.__mrx_comment_img=1>
+          mrx-comment-svg-<svg onload=window.__mrx_comment_svg=1></svg>
+          title={{ title }}
+          body={{ body }}
